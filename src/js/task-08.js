@@ -7,11 +7,11 @@ function logIn(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    return console.log("Please, all the fields should be fill in!");
+    return alert("Please, all the fields should be fill in!");
   }
 
   console.log(`Email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
-};
+}
 
 findForm.addEventListener("submit", logIn);
