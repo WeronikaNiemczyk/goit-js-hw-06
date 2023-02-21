@@ -12,8 +12,7 @@ const findButton = document.querySelector(`button`);
 
 const changeColor = function () {
   findBody.style.backgroundColor = getRandomHexColor();
+  findSpan.textContent = getRandomHexColor();
 };
 
 findButton.addEventListener("click", changeColor);
-
-
